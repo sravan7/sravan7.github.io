@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pixel.png" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    
+    
+    <style> 
+        @media screen and (max-width:440px) {
+            
+            h1{
+                font-size:2.5em; 
+            }
+            h2 {
+                font-size:1em; 
+                font-weight:600;
+            }
+            
+            #inputHeight {
+                
+                width:80px; 
+            }
+            
+            #inputWeight {
+                
+                width:80px; 
+            }
+            
+            #sizePicker{ 
+            padding:0;
+                
+            }
+            span{
+                margin:1px;
+            }
+            .submit{
+                margin:1em inherit;
+            }
+        }
+        
+     
+    </style>
+    <!--<script type="text/javascript" src="designs.js"> </script>-->
+</head>
+
+<body>
+
+    <h1>Pixel Art Maker</h1>
+    
+    <div class="twoDiv" > 
+    <div id="sizePicker">
+
+        <span>Grid Width: 
+            <input type="number" id="inputWeight" name="width" min="1" max="50" value="5" >
+        </span>
+
+        <span>Grid Height
+            <input type="number" id="inputHeight" name="height" min="1" max="50" value="5" >
+
+        </span>
+
+        
+        <input type="button" value="Submit" class="submit button" onclick="submitted()">
+
+
+    </div>
+
+    <div class="Canvas">
+        
+        <div class="divCanvas">
+            <h2>Design Canvas</h2>
+            <input type="button" value="Reset" class="button" onclick="removed()">
+            <input type="button" value="Download" class="button download" onclick="">
+            <input type="button" value="Share" class="button" onclick="">
+        </div>
+        
+        
+        <div id="divColorPicker">
+            Pick A Color <input type="color" id="colorPicker">
+        </div>
+
+    </div>
+    </div>
+    
+    <span class="error"> </span>
+    <table id="pixelCanvas">
+    </table>
+    
+    <div class="footer">
+    <div>Created as part Udacity-Google India Scholoship</div>
+    <div>&copy; <a href="https://in.udacity.com/" target="_blank">Udacity</a> and <a href="https://github.com/sravan7" target="_blank">Sravan Varma</a></div>
+    <div>Contact Me @ 
+    <a href="https://github.com/sravan7" target="_blank" > <i class="fa fa-github"></i> 
+        </a>
+        <a href="https://twitter.com/MuppallaSravan" target="_blank" > <i class="fa fa-twitter"></i> 
+        </a>
+        <a href="https://www.facebook.com/sravankumar.muppalla" target="_blank" > <i class="fa fa-facebook"></i> 
+        </a>    
+        
+    </div>
+        
+    </div>
+    <script src="designs.js"></script>
+</body>
+
+</html>

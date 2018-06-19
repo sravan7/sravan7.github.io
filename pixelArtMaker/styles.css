@@ -1,0 +1,149 @@
+h1 {
+    font-family: Monoton;
+    font-size:62px;
+    margin: 0.01em 0.1em 0.1em 0.1em;
+    padding: 0.0001em;
+    border: 0.0001em solid;
+    box-shadow: 0.005em 0.001em 0.09em 0.01em #000000;
+    text-align: center;
+}
+
+
+
+table,
+tr,
+td {
+
+    border: 0.5px solid black;
+
+}
+
+table {
+    width: auto;
+    height: 100%;
+    border: 0.001em solid;
+    box-shadow: 0.005em 0.001em 0.2em 0.01em #000000;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+tr {
+    height: 25px;
+}
+
+td {
+    width: 25px;
+
+}
+
+#inputWeight {
+    width: 7em;
+}
+
+#inputHeight {
+    width: 7em;
+}
+
+.twoDiv {
+    height: 10.7em;
+    border: 0em;
+    margin: 0.7em 0em 0.4em 0.5em;
+    padding: 0;
+    vertical-align: top;
+}
+
+#sizePicker {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    padding: 1em;
+    border: 0.0001em solid;
+    box-shadow: 0.005em 0.001em 0.5em 0.01em #000000;
+    vertical-align: top;
+}
+
+#colorPicker {
+    width: 3em;
+    height: 2.5em;
+}
+
+.error {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.Canvas {
+    width: 69%;
+    height: 100%;
+    display: inline-block;
+    margin-right:0.5%; 
+    padding: 0em;
+    border: 0.01em soild;
+    box-shadow: 0.005em 0.001em 0.5em 0.01em #000000;
+    text-align: center;
+    vertical-align: top;
+    float:right; 
+}
+
+#divColorPicker {
+    margin: 2.5em auto 0em auto;
+    font-weight: bold;
+}
+
+.test {
+    width: auto;
+    height: 100%;
+}
+
+span {
+    display: block;
+    margin: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    display: inline;
+    width: 5em;
+    height: 2.5em;
+    border-radius: 1em;
+    border: 0.05em solid;
+    box-shadow: 0em 0.09em 0.1em 0.01em #000000;
+    background-color: #ffffff;
+    font-weight: bold;
+    margin: auto;
+}
+
+.submit {
+    display: block;
+}
+
+.download {
+    width: 6em;
+}
+
+h2 {
+    margin: 0.3em auto;
+}
+
+.footer {
+    width: 100%;
+    height: 6.5%;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    border-top: 0.05em solid;
+    position:absolute;
+
+}
+
+i {
+    font-size: 70px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
