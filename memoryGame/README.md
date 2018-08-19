@@ -3,15 +3,15 @@
 
 ### Table of contents
 - [index.html](../memoryGame/index.html)
-  - _index.html contains all the page content_
+  - _i[ndex.html] (../memoryGame/index.html) contains all the page content_
 - [css](../memoryGame/css)
-  - _[app.css](../memoryGame/css/app.css)_
-   - _contains all the page styling_
-- [js](../memoryGame/js)
- - _[app.js](../memoryGame/js/app.js)_
-  - _contains javascript of the page_
+  - _[app.css](../memoryGame/css/app.css) contains all the page styling_ 
 
-## Matching game play:
+- [js](../memoryGame/js)
+  - _[app.js](../memoryGame/js/app.js) contains javascript of the page_
+
+
+## Matching Game Instructions:
 1. Click the card you want to open
 2. Guess and Click the card you want match with previously opened card in Step -1.
 3. Repeat all those steps to finish the game.
