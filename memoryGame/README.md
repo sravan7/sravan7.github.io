@@ -2,13 +2,13 @@
 **Developed as part of [Udacity](https://www.udacity.com/) - Google India Front End Scholarship**
 
 ### Table of contents
-- [index.html](../blob/master/memoryGame/index.html)
+- [index.html](../memoryGame/index.html)
   - _index.html contains all the page content_
-- [css](../blob/master/memoryGame/css)
-  - _[app.css](../blob/master/memoryGame/css/app.css)_
+- [css](../memoryGame/css)
+  - _[app.css](../memoryGame/css/app.css)_
    - _contains all the page styling_
-- [js](../blob/master/memoryGame/js)
- - _[app.js](../blob/master/memoryGame/js/app.js)_
+- [js](../memoryGame/js)
+ - _[app.js](../memoryGame/js/app.js)_
   - _contains javascript of the page_
 
 ## Matching game play:
