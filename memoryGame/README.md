@@ -3,7 +3,7 @@
 
 ### Table of contents
 - [index.html](../memoryGame/index.html)
-  - _i[ndex.html] (../memoryGame/index.html) contains all the page content_
+  - _[index.html](../memoryGame/index.html) contains all the page content_
 - [css](../memoryGame/css)
   - _[app.css](../memoryGame/css/app.css) contains all the page styling_ 
 
