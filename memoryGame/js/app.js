@@ -108,9 +108,15 @@ function listner() {
 
                 openedCards.length = 0;
                 moveClass.innerText = `Moves:${moves.toString()}`;
+<<<<<<< HEAD
                 starRating(moves);
 
 
+||||||| merged common ancestors
+                starRating();
+=======
+                starRating(moves);
+>>>>>>> 8bf76011e803ab698850e4e009247ded433b9d66
             }
         });
     }
@@ -166,15 +172,18 @@ function close() {
 
 
 //starRating() function updates rating based on number of moves to win the game
-function starRating() {
+function starRating(moves) {
     //stars.remove();
     let innerStars = stars.querySelectorAll("LI");
-    if (innerStars.length === 3 && moves > 17 && moves < 24) {
+    if (innerStars.length === 3 && moves===18) {
 
         stars.removeChild(innerStars[0])
         
-    } else if (innerStars.length === 2 && moves > 24) {
+    } else if (innerStars.length === 2 && moves===25) {
         stars.removeChild(innerStars[0]);
+    }
+    else{
+        return null;
     }
 }
 
