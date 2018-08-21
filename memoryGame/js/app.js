@@ -88,13 +88,16 @@ function listner() {
     for (let i = 0; i < cards.length; i++) {
 
         cards[i].addEventListener("click", function (e) {
+            //setTimer= setTimeout(timerFunc,1000);
+
             cards[i].classList.add("clickDisable", "open", "show");
             openClass = document.querySelector(".open");
+
             cards[i].style.cssText = "transition:0.1s; transform:rotateY(180deg);";
             //console.log(e.target.innerHTML); 
             openedCards.push(e.target);
             //console.log(openClass);
-            //console.log(openedCards.length);
+            console.log(openedCards.length);
             if (openedCards.length == 2) {
                 moves += 1;
                 if (moves === 1) {
@@ -102,13 +105,17 @@ function listner() {
                 }
                 match();
                 console.log("called");
+
                 openedCards.length = 0;
                 moveClass.innerText = `Moves:${moves.toString()}`;
-                starRating();
+                starRating(moves);
+
+
             }
         });
     }
 }
+
 //macth() function matches the cars if the opend cards length is 2 and calls the displayWin() when matched cards length equals to icons length
 function match() {
 
