@@ -108,15 +108,9 @@ function listner() {
 
                 openedCards.length = 0;
                 moveClass.innerText = `Moves:${moves.toString()}`;
-<<<<<<< HEAD
+
                 starRating(moves);
 
-
-||||||| merged common ancestors
-                starRating();
-=======
-                starRating(moves);
->>>>>>> 8bf76011e803ab698850e4e009247ded433b9d66
             }
         });
     }
