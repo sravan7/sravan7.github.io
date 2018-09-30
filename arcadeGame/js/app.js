@@ -260,7 +260,7 @@ var Player = function ({
 
         if (Status.level == 2) {
 
-            Status.livesUpdate(4);
+            Status.livesUpdate(5);
             allEnemies.push(new Enemy(-400, 30));
             console.log("level two");
             this.x = 200;
@@ -268,16 +268,17 @@ var Player = function ({
             this.sprite = "images/char-pink-girl.png";
         } else if (Status.level == 3) {
 
-            Status.livesUpdate(5);
-            allEnemies.push(new Enemy(-500, 230))
+            Status.livesUpdate(7);
+            allEnemies.push(new Enemy(-500, 230));
             console.log("level hree");
             this.x = 200;
             this.y = 300;
             this.sprite = "images/char-horn-girl.png";
         } else if (Status.level == 4) {
 
-            allEnemies.push(new Enemy(-500, 130))
-            Status.livesUpdate(6);
+            allEnemies.push(new Enemy(-500, 130));
+            allEnemies.push(new Enemy(-700, 30))
+            Status.livesUpdate(9);
             console.log("level four");
             this.x = 200;
             this.y = 300;
