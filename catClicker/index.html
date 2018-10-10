@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CatClick</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        img {
+            width:300px;
+            height:300px; 
+        }
+
+        div {
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+
+        section{
+            display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-flow: row wrap;
+           align-content: center;
+            
+        }
+        h3 {
+            position: absolute;
+            top:2%;
+            right: 10%;
+            color:#fff;
+            font-size:35px; 
+        }
+
+        p {
+            position: absolute;
+            font-size:100px;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+    
+        footer{
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>Cat Clicker</h1>
+    <section>
+       <!-- <div>
+           <img src="kitty.jpg" alt="cat image" >
+            <p>0</p>
+            <h3>kitty</h3>
+        </div>
+        
+        <div><img src="jitty.jpg" alt="cat jimmy image" >
+            <p>0</p>
+             <h3>kitty</h3>
+        </div>-->
+    </section>
+
+   <br>
+   <hr>
+    <footer>&#169 to the <a href="https://unsplash.com/search/photos/cat">ImageCreators </a>and <a href="https://github.com/sravan7">SravanVarma</a> and <a href="https://udacity.com">Udacity</a></footer>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        let names = ["jitty","kitty","litty","nitty","oitty","pitty","ritty",'sitty','titty','uitty'];
+        //let div;
+        names.forEach(function(name){
+            const div = `<div>
+                            <img src=${'images/'+name+'.jpg'} onclick=counter.call(this);>
+                            <p>${0}</p>
+                            <h3>${name}</h3></div>`
+            $('section').append(div); 
+        });
+        
+        function counter(Event){
+            //console.log(Event)
+            let p = $(this).next();
+            console.log(p.text())
+            //p.text="ewce";
+            //p.text("")
+            p.text(`${parseInt(p.text())+1}`);
+            
+        }
+        /*let p = document.querySelector("P");
+        //let val = parseInt(p.innerText);
+        document.querySelector('img').onclick = function() {
+                    //console.log(parseInt(p.innerText)+1);
+                    p.innerText=`${parseInt(p.innerText)+1}`;
+                    document.title=`CatClick(${parseInt(p.innerText)})`;
+        }*/
+        
+        /*function counter() {
+            console.log("clciked");
+                p.innerText = "";
+                p.innerText = `${val++}`;
+                console.log(p.innerText);
+            document.querySelector('img').onclick = function() {
+                
+            }*/
+    </script>
+</body>
+</html>
