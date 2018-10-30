@@ -5,7 +5,7 @@ function submitted() {
     var l = $("#inputWeight").val();
     removed();
     console.log(parseInt(k), typeof (k));
-    if (parseInt(k) <= 100 && parseInt(l) < 20) {
+    if (parseInt(k) < 20 && parseInt(l) <=100) {
         $("span.error").hide();
 
         makeGrid(k, l);
