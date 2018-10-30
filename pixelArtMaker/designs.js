@@ -13,7 +13,7 @@ function submitted() {
     } else {
         console.log("excedded")
         $("span.error").show();
-        $("span.error").text("Don't waste My Time. Don't enter Width >100 || Height > 20 ").attr("style", "color:blue");
+        $("span.error").text("Don't waste My Time. Don't enter Width > 100 and Height > 20 ").attr("style", "color:blue");
     }
 
 }
