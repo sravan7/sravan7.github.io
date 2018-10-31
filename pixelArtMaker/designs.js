@@ -8,7 +8,7 @@ function submitted() {
     if (parseInt(k) < 20 && parseInt(l) <=100) {
         $("span.error").hide();
 
-        makeGrid(l, k);
+        makeGrid(k, l);
         console.log("got strucked here");
     } else {
         console.log("excedded")
